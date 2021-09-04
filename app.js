@@ -53,6 +53,10 @@ function requestUserRepos(username){
             li.innerHTML = (`
                 <p><strong>Repo:</strong> ${data[i].name}</p>
                 <p><strong>Description:</strong> ${data[i].description}</p>
+                <p><strong>Created at:</strong> ${data[i].created_at}</p>
+                <p><strong>Language:</strong> ${data[i].language}</p>
+                <p><strong>No. of forks:</strong> ${data[i].forks_count}</p>
+                <p><strong>Last updated:</strong> ${data[i].updated_at}</p>
                 <p><strong>URL:</strong> <a href="${data[i].html_url}">${data[i].html_url}</a></p>
             `);
             
